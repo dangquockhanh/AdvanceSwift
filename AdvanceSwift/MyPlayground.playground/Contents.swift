@@ -61,25 +61,24 @@ import UIKit
 //
 //let serialQueue2 = OS_dispatch_queue_serial(label: "com.framgia.serialQueue")
 //
-//serialQueue2.sync() { () -> Void in
+//serialQueue2.async() { () -> Void in
 //    // Do task 3 code
 //    print("3")
 //}
 
-//let concurrentQueue = dispatch_queue_global_t(label: "0")
-//
-//concurrentQueue.async() { () -> Void in
-//    // Do task 1 code
-//    print("1")
-//}
-//
-//concurrentQueue.async() { () -> Void in
-//    // Do task 2 code
-//    print("2")
-//}
-//
-//let concurrentQueue1 = OS_dispatch_queue_serial(label: "0")
-//concurrentQueue1.sync() { () -> Void in
-//    // Do task 3 code
-//    print("3")
-//}
+let concurrentQueue = dispatch_queue_global_t(label: "0")
+
+concurrentQueue.async() { () -> Void in
+    // Do task 1 code
+    print("1")
+}
+
+concurrentQueue.async() { () -> Void in
+    // Do task 2 code
+    print("2")
+}
+
+concurrentQueue.async() { () -> Void in
+    // Do task 3 code
+    print("3")
+}
