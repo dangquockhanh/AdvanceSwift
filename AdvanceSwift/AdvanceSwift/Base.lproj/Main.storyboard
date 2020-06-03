@@ -1,24 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zDg-Fx-z6N">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Giải trí-->
+        <scene sceneID="Llk-Bh-VnO">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="ILa-AO-lSE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p9G-Br-uCa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="zny-YG-mhA"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Giải trí" id="OXr-cm-CsC"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsY-7I-CzZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-474" y="975"/>
+        </scene>
+        <!--Cửa hàng-->
+        <scene sceneID="9YC-QI-aov">
+            <objects>
+                <viewController id="g9E-Al-W2w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Oe-5r-wtZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="tf3-gj-6iI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cửa hàng" id="2LZ-U9-hgL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wN9-hU-7JA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="975"/>
+        </scene>
+        <!--Gói cước -->
+        <scene sceneID="rka-mY-lSU">
+            <objects>
+                <viewController id="LhH-Yx-kZF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IrW-dt-m2O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7VV-Kp-hDl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gói cước " id="RwM-6B-JEl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Kk-6v-olN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1554" y="439"/>
+        </scene>
+        <!--Trang chủ-->
+        <scene sceneID="4j2-Tn-cfJ">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="ihu-dW-52L" customClass="HomeViewController" customModule="AdvanceSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vsB-GZ-1NQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" canCancelContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3q-It-1H7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wl9-Wz-P80">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="837"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yED-xC-ugu">
+                                                <rect key="frame" x="8" y="52" width="46" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="T50-24-gjv"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ưu đãi Viettel ++" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m51-7a-eLj">
+                                                <rect key="frame" x="12" y="716.66666666666663" width="394" height="20.333333333333371"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="m51-7a-eLj" secondAttribute="trailing" constant="8" id="4ex-FR-ANX"/>
+                                            <constraint firstAttribute="trailing" secondItem="yED-xC-ugu" secondAttribute="trailing" constant="360" id="5kP-un-1r9"/>
+                                            <constraint firstItem="m51-7a-eLj" firstAttribute="leading" secondItem="Wl9-Wz-P80" secondAttribute="leading" constant="12" id="Nzn-mn-pWQ"/>
+                                            <constraint firstItem="yED-xC-ugu" firstAttribute="top" secondItem="Wl9-Wz-P80" secondAttribute="top" constant="52" id="amX-rs-Q7i"/>
+                                            <constraint firstAttribute="bottom" secondItem="m51-7a-eLj" secondAttribute="bottom" constant="100" id="hc9-pP-90J"/>
+                                            <constraint firstItem="yED-xC-ugu" firstAttribute="leading" secondItem="Wl9-Wz-P80" secondAttribute="leading" constant="8" id="m8B-4a-YIw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Wl9-Wz-P80" firstAttribute="leading" secondItem="z3q-It-1H7" secondAttribute="leading" id="5kB-gZ-219"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wl9-Wz-P80" secondAttribute="trailing" id="NMT-wy-d7G"/>
+                                    <constraint firstItem="Wl9-Wz-P80" firstAttribute="width" secondItem="z3q-It-1H7" secondAttribute="width" id="axL-nT-k9g"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wl9-Wz-P80" secondAttribute="bottom" constant="-94" id="sNj-tB-laj"/>
+                                    <constraint firstItem="Wl9-Wz-P80" firstAttribute="height" secondItem="z3q-It-1H7" secondAttribute="height" priority="250" constant="150" id="wBB-KO-i9T"/>
+                                    <constraint firstItem="Wl9-Wz-P80" firstAttribute="top" secondItem="z3q-It-1H7" secondAttribute="top" id="z1q-N6-5VD"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078431372549019607" green="0.68235294117647061" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="z3q-It-1H7" firstAttribute="leading" secondItem="NyC-eE-lRn" secondAttribute="leading" id="93S-p0-UKw"/>
+                            <constraint firstItem="z3q-It-1H7" firstAttribute="trailing" secondItem="NyC-eE-lRn" secondAttribute="trailing" id="AM7-YQ-KdQ"/>
+                            <constraint firstItem="z3q-It-1H7" firstAttribute="bottom" secondItem="NyC-eE-lRn" secondAttribute="bottom" id="ixV-LP-Ci5"/>
+                            <constraint firstItem="z3q-It-1H7" firstAttribute="top" secondItem="NyC-eE-lRn" secondAttribute="top" id="qGQ-2K-mGa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NyC-eE-lRn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trang chủ" id="MZp-mE-3tu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JhT-bZ-ixd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386.9565217391305" y="-261.68478260869568"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Fd7-bg-qcv">
+            <objects>
+                <tabBarController id="zDg-Fx-z6N" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="DpT-f4-cws"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3gL-Ei-dW2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ihu-dW-52L" kind="relationship" relationship="viewControllers" id="lK8-fy-5TP"/>
+                        <segue destination="LhH-Yx-kZF" kind="relationship" relationship="viewControllers" id="wOO-JV-VFt"/>
+                        <segue destination="g9E-Al-W2w" kind="relationship" relationship="viewControllers" id="kHZ-aI-GWe"/>
+                        <segue destination="ILa-AO-lSE" kind="relationship" relationship="viewControllers" id="321-5r-h2d"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOi-Wx-kOP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="97"/>
         </scene>
     </scenes>
 </document>
