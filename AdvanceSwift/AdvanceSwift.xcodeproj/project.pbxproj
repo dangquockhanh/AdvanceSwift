@@ -13,6 +13,8 @@
 		1C29984C247C28E4007D5E72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C29984A247C28E4007D5E72 /* Main.storyboard */; };
 		1C29984E247C28E9007D5E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C29984D247C28E9007D5E72 /* Assets.xcassets */; };
 		1C299851247C28E9007D5E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C29984F247C28E9007D5E72 /* LaunchScreen.storyboard */; };
+		1CCAA370248F342800A5F4CC /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCAA36E248F342800A5F4CC /* CardViewController.swift */; };
+		1CCAA371248F342800A5F4CC /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CCAA36F248F342800A5F4CC /* CardViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		1C299850247C28E9007D5E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C299852247C28E9007D5E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C299859247C2AB0007D5E72 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1CCAA36E248F342800A5F4CC /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		1CCAA36F248F342800A5F4CC /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		1C299843247C28E4007D5E72 /* AdvanceSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1CCAA36C248F33D400A5F4CC /* CarViewXib */,
 				1C299844247C28E4007D5E72 /* AppDelegate.swift */,
 				1C299846247C28E4007D5E72 /* SceneDelegate.swift */,
 				1C299848247C28E4007D5E72 /* ViewController.swift */,
@@ -67,6 +72,15 @@
 				1C299852247C28E9007D5E72 /* Info.plist */,
 			);
 			path = AdvanceSwift;
+			sourceTree = "<group>";
+		};
+		1CCAA36C248F33D400A5F4CC /* CarViewXib */ = {
+			isa = PBXGroup;
+			children = (
+				1CCAA36E248F342800A5F4CC /* CardViewController.swift */,
+				1CCAA36F248F342800A5F4CC /* CardViewController.xib */,
+			);
+			path = CarViewXib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CCAA371248F342800A5F4CC /* CardViewController.xib in Resources */,
 				1C299851247C28E9007D5E72 /* LaunchScreen.storyboard in Resources */,
 				1C29984E247C28E9007D5E72 /* Assets.xcassets in Resources */,
 				1C29984C247C28E4007D5E72 /* Main.storyboard in Resources */,
@@ -140,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CCAA370248F342800A5F4CC /* CardViewController.swift in Sources */,
 				1C299849247C28E4007D5E72 /* ViewController.swift in Sources */,
 				1C299845247C28E4007D5E72 /* AppDelegate.swift in Sources */,
 				1C299847247C28E4007D5E72 /* SceneDelegate.swift in Sources */,
