@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
+    @IBOutlet weak var scanCamera: UIView!
+    @IBOutlet weak var photoCamera: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
