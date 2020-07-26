@@ -55,6 +55,7 @@
 		1C19F71424CD473B00513211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C19F72024CD4BDD00513211 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		1C19F72224CD4ED700513211 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		1C19F72424CD61C900513211 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = ../MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 		1C19F6E124CD473600513211 = {
 			isa = PBXGroup;
 			children = (
+				1C19F72424CD61C900513211 /* MyPlayground.playground */,
 				1C19F6EC24CD473600513211 /* MasterUI */,
 				1C19F70624CD473B00513211 /* MasterUITests */,
 				1C19F71124CD473B00513211 /* MasterUIUITests */,
