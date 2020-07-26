@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AdvanceSwift.xcodeproj">
+      location = "self:MasterUI.xcodeproj">
    </FileRef>
 </Workspace>
