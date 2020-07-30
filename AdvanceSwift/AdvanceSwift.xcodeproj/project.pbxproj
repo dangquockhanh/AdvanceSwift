@@ -13,6 +13,9 @@
 		1C29984C247C28E4007D5E72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C29984A247C28E4007D5E72 /* Main.storyboard */; };
 		1C29984E247C28E9007D5E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C29984D247C28E9007D5E72 /* Assets.xcassets */; };
 		1C299851247C28E9007D5E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C29984F247C28E9007D5E72 /* LaunchScreen.storyboard */; };
+		1CCA902F24D25C560097E825 /* Person.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA902D24D25C560097E825 /* Person.xcdatamodeld */; };
+		1CCA903224D25C920097E825 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA903024D25C920097E825 /* Person+CoreDataClass.swift */; };
+		1CCA903324D25C920097E825 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA903124D25C920097E825 /* Person+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		1C299850247C28E9007D5E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C299852247C28E9007D5E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C299859247C2AB0007D5E72 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1CCA902E24D25C560097E825 /* Person.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Person.xcdatamodel; sourceTree = "<group>"; };
+		1CCA903024D25C920097E825 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1CCA903124D25C920097E825 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		1C299843247C28E4007D5E72 /* AdvanceSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1CCA903424D25C970097E825 /* Model */,
 				1C299844247C28E4007D5E72 /* AppDelegate.swift */,
 				1C299846247C28E4007D5E72 /* SceneDelegate.swift */,
 				1C299848247C28E4007D5E72 /* ViewController.swift */,
@@ -65,8 +72,18 @@
 				1C29984D247C28E9007D5E72 /* Assets.xcassets */,
 				1C29984F247C28E9007D5E72 /* LaunchScreen.storyboard */,
 				1C299852247C28E9007D5E72 /* Info.plist */,
+				1CCA902D24D25C560097E825 /* Person.xcdatamodeld */,
 			);
 			path = AdvanceSwift;
+			sourceTree = "<group>";
+		};
+		1CCA903424D25C970097E825 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CCA903024D25C920097E825 /* Person+CoreDataClass.swift */,
+				1CCA903124D25C920097E825 /* Person+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +159,9 @@
 			files = (
 				1C299849247C28E4007D5E72 /* ViewController.swift in Sources */,
 				1C299845247C28E4007D5E72 /* AppDelegate.swift in Sources */,
+				1CCA903324D25C920097E825 /* Person+CoreDataProperties.swift in Sources */,
+				1CCA903224D25C920097E825 /* Person+CoreDataClass.swift in Sources */,
+				1CCA902F24D25C560097E825 /* Person.xcdatamodeld in Sources */,
 				1C299847247C28E4007D5E72 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +358,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1CCA902D24D25C560097E825 /* Person.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1CCA902E24D25C560097E825 /* Person.xcdatamodel */,
+			);
+			currentVersion = 1CCA902E24D25C560097E825 /* Person.xcdatamodel */;
+			name = Person.xcdatamodeld;
+			path = ../Person.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1C299839247C28E4007D5E72 /* Project object */;
 }
