@@ -1,8 +1,8 @@
 //
-//  Person+CoreDataClass.swift
+//  Family+CoreDataClass.swift
 //  AdvanceSwift
 //
-//  Created by Đặng Khánh  on 7/30/20.
+//  Created by Đặng Khánh  on 8/1/20.
 //  Copyright © 2020 Đặng Khánh . All rights reserved.
 //
 //
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(Person)
-public class Person: NSManagedObject {
+@objc(Family)
+public class Family: NSManagedObject {
 
 }

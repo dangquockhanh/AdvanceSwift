@@ -24,10 +24,24 @@ class ViewController: UIViewController {
         tableView.delegate = self
         fetchPeople()
     }
+    
+    func relationshipDemo() {
+        
+        let family = Family(context: context)
+        family.name = "Abc Family"
+        var person = Person(context: context)
+        person.name = "Maggie"
+        
+        family.addToPeople(person)
+        
+        try! context.save()
+    }
+    
+    
     // fetch the data from Core data to display in the tableView
     func fetchPeople() {
         do {
-//            self.items = try context.fetch(Person.fetchRequest())
+            self.items = try context.fetch(Person.fetchRequest())
             
             let request = Person.fetchRequest() as NSFetchRequest<Person>
                      

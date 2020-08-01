@@ -2,7 +2,7 @@
 //  Person+CoreDataProperties.swift
 //  AdvanceSwift
 //
-//  Created by Đặng Khánh  on 7/30/20.
+//  Created by Đặng Khánh  on 8/1/20.
 //  Copyright © 2020 Đặng Khánh . All rights reserved.
 //
 //
@@ -17,8 +17,9 @@ extension Person {
         return NSFetchRequest<Person>(entityName: "Person")
     }
 
-    @NSManaged public var name: String?
     @NSManaged public var age: Int64
     @NSManaged public var gender: String?
+    @NSManaged public var name: String?
+    @NSManaged public var family: Family?
 
 }
