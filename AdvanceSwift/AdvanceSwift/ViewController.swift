@@ -112,4 +112,22 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         self.present(alert, animated: true, completion: nil)
     }
     
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let action = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completionHandler) in
+        let personToRemove = self.items![indexPath.row]
+        
+        
+        self.context.delete(personToRemove)
+        
+        do {
+            try! self.context.save()
+        }
+        
+        self.fetchPeople()
+        }
+        
+        return UISwipeActionsConfiguration(actions: [action])
+    }
 }
