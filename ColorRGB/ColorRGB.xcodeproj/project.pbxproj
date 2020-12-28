@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		1C389CC22597AD850014FC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C389CC02597AD850014FC5A /* LaunchScreen.storyboard */; };
 		1C389CCD2597ADA50014FC5A /* Extension+Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C389CCC2597ADA50014FC5A /* Extension+Float.swift */; };
 		1C389CD02597ADB90014FC5A /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C389CCF2597ADB80014FC5A /* Extension+UIColor.swift */; };
+		1C896F642598D41D005296D3 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C896F632598D41D005296D3 /* IntroductionViewController.swift */; };
 		8043F5C3EDD0793C5221AB61 /* Pods_ColorRGB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB5D20ADF7889D367543631 /* Pods_ColorRGB.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		1C389CC32597AD850014FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C389CCC2597ADA50014FC5A /* Extension+Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Float.swift"; sourceTree = "<group>"; };
 		1C389CCF2597ADB80014FC5A /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		1C896F632598D41D005296D3 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		BB8999139A4AC26AB3846A35 /* Pods-ColorRGB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorRGB.release.xcconfig"; path = "Target Support Files/Pods-ColorRGB/Pods-ColorRGB.release.xcconfig"; sourceTree = "<group>"; };
 		D05ECD95626ABAFA03270CC9 /* Pods-ColorRGB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorRGB.debug.xcconfig"; path = "Target Support Files/Pods-ColorRGB/Pods-ColorRGB.debug.xcconfig"; sourceTree = "<group>"; };
 		DDB5D20ADF7889D367543631 /* Pods_ColorRGB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorRGB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,7 @@
 				1C389CBE2597AD850014FC5A /* Assets.xcassets */,
 				1C389CC02597AD850014FC5A /* LaunchScreen.storyboard */,
 				1C389CC32597AD850014FC5A /* Info.plist */,
+				1C896F632598D41D005296D3 /* IntroductionViewController.swift */,
 			);
 			path = ColorRGB;
 			sourceTree = "<group>";
@@ -102,7 +105,6 @@
 				D05ECD95626ABAFA03270CC9 /* Pods-ColorRGB.debug.xcconfig */,
 				BB8999139A4AC26AB3846A35 /* Pods-ColorRGB.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -224,6 +226,7 @@
 				1C389CD02597ADB90014FC5A /* Extension+UIColor.swift in Sources */,
 				1C389CB62597AD810014FC5A /* AppDelegate.swift in Sources */,
 				1C389CCD2597ADA50014FC5A /* Extension+Float.swift in Sources */,
+				1C896F642598D41D005296D3 /* IntroductionViewController.swift in Sources */,
 				1C389CB82597AD810014FC5A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

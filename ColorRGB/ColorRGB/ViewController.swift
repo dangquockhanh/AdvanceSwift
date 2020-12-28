@@ -53,7 +53,6 @@ class ViewController: UIViewController {
 extension ViewController {
     
     @IBAction func slideAction(_ sender: UISlider) {
-        print("Color \(sender.value)")
         
         switch sender.tag {
         case 0:
@@ -78,10 +77,9 @@ extension ViewController {
             let senderValue: String = "\(sender.value)"
             let opacityText = senderValue
             let opacityFloat = (opacityText as NSString).floatValue
-            let opa: String  = String(format: "%.1f", opacityFloat)
-            print("OPACITY \(opa)")
+            let opacityString: String  = String(format: "%.1f", opacityFloat) // convert float to string
             self.opacity = opacityFloat
-            opacityLabel.text = opa
+            opacityLabel.text = opacityString
         default:
             break
         }
