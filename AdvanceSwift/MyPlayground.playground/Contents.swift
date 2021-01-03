@@ -26,3 +26,17 @@ func reverseNumber(_ numebrs: [Int]) -> [Int] {
     
     return reverse.reversed()
 }
+
+// tìm phần tử lặp trong mảng
+let testNumbers = [1,1,2,3,4,5,2]
+var reapeat = [Int]()
+let nondupicate = testNumbers.reduce(into: [Int]()) {
+    if !$0.contains($1) {
+        $0.append($1)
+    } else {
+        print("Found dupicate: \($1)")
+        reapeat.append($1)
+    }
+}
+
+print(reapeat)
