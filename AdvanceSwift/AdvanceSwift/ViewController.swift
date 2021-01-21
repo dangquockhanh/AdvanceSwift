@@ -119,5 +119,5 @@ extension ViewController: AVCaptureMetadataOutputObjectsDelegate {
             AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
         }
     }
-    kalsdmasm
+    
 }
