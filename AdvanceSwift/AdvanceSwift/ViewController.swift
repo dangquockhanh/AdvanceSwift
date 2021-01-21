@@ -118,5 +118,6 @@ extension ViewController: AVCaptureMetadataOutputObjectsDelegate {
             self.captureSession?.stopRunning()
             AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
         }
-    }    
+    }
+    
 }
