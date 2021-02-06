@@ -23,8 +23,8 @@
                                     <constraint firstAttribute="height" constant="50" id="6E5-pG-iMm"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Thông tin đơn hàng"/>
+                                    <segment title="Lịch sử đơn hàng"/>
                                 </segments>
                                 <connections>
                                     <action selector="selected_segment:" destination="BYZ-38-t0r" eventType="valueChanged" id="R3j-CT-uKQ"/>

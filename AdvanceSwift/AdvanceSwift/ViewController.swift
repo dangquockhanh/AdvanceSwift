@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var segmentButton: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
-    var isShowing = false
+    var datasourceInfomationOrder = InfomationOrder()
+    var datasourceHistoryOrder = HistoryOrder()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +27,9 @@ class ViewController: UIViewController {
     }
     
     func registerTableView() {
-        tableView.dataSource = self
-        tableView.delegate = self
+        tableView.dataSource = datasourceInfomationOrder
         tableView.register(UINib(nibName: Constant.tableViewCell, bundle: nil), forCellReuseIdentifier: Constant.tableViewCell)
+        tableView.register(UINib(nibName: Constant.secondTableViewCell, bundle: nil), forCellReuseIdentifier: Constant.secondTableViewCell)
     }
 }
 
@@ -38,10 +39,10 @@ extension ViewController {
     @IBAction func selected_segment(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-            isShowing = false
+            tableView.dataSource = datasourceInfomationOrder
             tableView.reloadData()
         case 1:
-            isShowing = true
+            tableView.dataSource = datasourceHistoryOrder
             tableView.reloadData()
         default:
             break
@@ -50,21 +51,24 @@ extension ViewController {
 }
 
 //MARK: -UITABLEVIEW
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
+class InfomationOrder: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if !isShowing {
-            return 10
-        }
-        return 5
+            return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: Constant.tableViewCell, for: indexPath) as? TableViewCell else { return UITableViewCell() }
-        if !isShowing {
-            cell.textLabel?.text = "Trái"
-        } else {
-            cell.textLabel?.text = "Phải"
-        }
-        return cell
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: Constant.tableViewCell, for: indexPath) as? TableViewCell else { return UITableViewCell() }
+            return cell
+    }
+}
+
+class HistoryOrder: NSObject, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: Constant.secondTableViewCell, for: indexPath) as? SecondTableViewCell else { return UITableViewCell() }
+    return cell
     }
 }
