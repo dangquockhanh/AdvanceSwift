@@ -17,9 +17,21 @@ class ViewController: UIViewController {
     var datasourceInfomationOrder = InfomationOrder()
     var datasourceHistoryOrder = HistoryOrder()
     
+    var data: InfomationCustomerModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        fetchData()
+    }
+    
+    private func fetchData() {
+        SERVICEAPI.shared.getInfomation { data in
+            self.data = data
+            DispatchQueue.main.async {
+                self.setupView()
+                self.tableView.reloadData()
+            }
+        }
     }
     
     func setupView() {
@@ -27,6 +39,7 @@ class ViewController: UIViewController {
     }
     
     func registerTableView() {
+        datasourceInfomationOrder.formData = data //gán data sang Object InfomationOrder
         tableView.dataSource = datasourceInfomationOrder
         tableView.register(UINib(nibName: Constant.tableViewCell, bundle: nil), forCellReuseIdentifier: Constant.tableViewCell)
         tableView.register(UINib(nibName: Constant.secondTableViewCell, bundle: nil), forCellReuseIdentifier: Constant.secondTableViewCell)
@@ -52,17 +65,30 @@ extension ViewController {
 
 //MARK: -UITABLEVIEW
 class InfomationOrder: NSObject, UITableViewDataSource {
+    var formData: InfomationCustomerModel?
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 5
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: Constant.tableViewCell, for: indexPath) as? TableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: Constant.tableViewCell, for: indexPath) as? TableViewCell else { return UITableViewCell() }
+        
+        guard let dataModel = formData else {
             return cell
+        }
+        
+        cell.setupData(with: dataModel)
+        return cell
     }
 }
 
 class HistoryOrder: NSObject, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return 10
     }

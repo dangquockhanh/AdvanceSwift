@@ -10,6 +10,10 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var numberPhoneLabel: UILabel!
+    @IBOutlet weak var nameCustomerLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +25,10 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    
+    func setupData(with: InfomationCustomerModel) {
+        self.numberPhoneLabel.text = with.numberPhone
+        self.addressLabel.text = with.address
+        self.nameCustomerLabel.text = with.nameCustomer
+    }
 }

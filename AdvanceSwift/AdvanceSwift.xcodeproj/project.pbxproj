@@ -12,6 +12,8 @@
 		1C253A9025CE59EC00ECA752 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C253A8F25CE59EC00ECA752 /* Constant.swift */; };
 		1C253A9D25CEDD6F00ECA752 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C253A9B25CEDD6F00ECA752 /* SecondTableViewCell.swift */; };
 		1C253A9E25CEDD6F00ECA752 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C253A9C25CEDD6F00ECA752 /* SecondTableViewCell.xib */; };
+		1C253AA225CEE6EA00ECA752 /* InfomationCustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C253AA125CEE6EA00ECA752 /* InfomationCustomerModel.swift */; };
+		1C253AA625CEEEF700ECA752 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C253AA525CEEEF700ECA752 /* ServiceAPI.swift */; };
 		1C299845247C28E4007D5E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C299844247C28E4007D5E72 /* AppDelegate.swift */; };
 		1C299847247C28E4007D5E72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C299846247C28E4007D5E72 /* SceneDelegate.swift */; };
 		1C299849247C28E4007D5E72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C299848247C28E4007D5E72 /* ViewController.swift */; };
@@ -26,6 +28,8 @@
 		1C253A8F25CE59EC00ECA752 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		1C253A9B25CEDD6F00ECA752 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
 		1C253A9C25CEDD6F00ECA752 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		1C253AA125CEE6EA00ECA752 /* InfomationCustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfomationCustomerModel.swift; sourceTree = "<group>"; };
+		1C253AA525CEEEF700ECA752 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
 		1C299841247C28E4007D5E72 /* AdvanceSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvanceSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C299844247C28E4007D5E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C299846247C28E4007D5E72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		1C253AA025CEE6CA00ECA752 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C253AA125CEE6EA00ECA752 /* InfomationCustomerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1C299838247C28E4007D5E72 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +91,7 @@
 		1C299843247C28E4007D5E72 /* AdvanceSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1C253AA025CEE6CA00ECA752 /* Model */,
 				1C253A8725CE58E900ECA752 /* Cell */,
 				1C299844247C28E4007D5E72 /* AppDelegate.swift */,
 				1C299846247C28E4007D5E72 /* SceneDelegate.swift */,
@@ -88,6 +101,7 @@
 				1C29984F247C28E9007D5E72 /* LaunchScreen.storyboard */,
 				1C299852247C28E9007D5E72 /* Info.plist */,
 				1C253A8F25CE59EC00ECA752 /* Constant.swift */,
+				1C253AA525CEEEF700ECA752 /* ServiceAPI.swift */,
 			);
 			path = AdvanceSwift;
 			sourceTree = "<group>";
@@ -167,9 +181,11 @@
 			files = (
 				1C299849247C28E4007D5E72 /* ViewController.swift in Sources */,
 				1C253A8A25CE591700ECA752 /* TableViewCell.swift in Sources */,
+				1C253AA225CEE6EA00ECA752 /* InfomationCustomerModel.swift in Sources */,
 				1C253A9025CE59EC00ECA752 /* Constant.swift in Sources */,
 				1C299845247C28E4007D5E72 /* AppDelegate.swift in Sources */,
 				1C299847247C28E4007D5E72 /* SceneDelegate.swift in Sources */,
+				1C253AA625CEEEF700ECA752 /* ServiceAPI.swift in Sources */,
 				1C253A9D25CEDD6F00ECA752 /* SecondTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
