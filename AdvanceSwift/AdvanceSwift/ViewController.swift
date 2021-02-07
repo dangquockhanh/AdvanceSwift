@@ -53,48 +53,12 @@ extension ViewController {
         switch sender.selectedSegmentIndex {
         case 0:
             tableView.dataSource = datasourceInfomationOrder
-            tableView.reloadData()
         case 1:
             tableView.dataSource = datasourceHistoryOrder
-            tableView.reloadData()
         default:
             break
         }
+        tableView.reloadData()
     }
 }
 
-//MARK: -UITABLEVIEW
-class InfomationOrder: NSObject, UITableViewDataSource {
-    var formData: InfomationCustomerModel?
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-        
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: Constant.tableViewCell, for: indexPath) as? TableViewCell else { return UITableViewCell() }
-        
-        guard let dataModel = formData else {
-            return cell
-        }
-        
-        cell.setupData(with: dataModel)
-        return cell
-    }
-}
-
-class HistoryOrder: NSObject, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 10
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: Constant.secondTableViewCell, for: indexPath) as? SecondTableViewCell else { return UITableViewCell() }
-    return cell
-    }
-}

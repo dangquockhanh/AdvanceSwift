@@ -8,15 +8,9 @@
 
 import UIKit
 
-class InfomationCustomerModel: Decodable {
-    var numberPhone: String?
-    var nameCustomer: String?
-    var address: String?
-    
-    init(numberPhone: String?, nameCustomer: String?, address: String?) {
-        self.numberPhone = numberPhone
-        self.nameCustomer = nameCustomer
-        self.address = address
-    }
+struct InfomationCustomerModel: Decodable {
+    var numberPhone = ""
+    var nameCustomer = ""
+    var address = ""
 }
 

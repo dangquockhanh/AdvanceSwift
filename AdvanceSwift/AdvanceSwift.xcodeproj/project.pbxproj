@@ -14,6 +14,8 @@
 		1C253A9E25CEDD6F00ECA752 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C253A9C25CEDD6F00ECA752 /* SecondTableViewCell.xib */; };
 		1C253AA225CEE6EA00ECA752 /* InfomationCustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C253AA125CEE6EA00ECA752 /* InfomationCustomerModel.swift */; };
 		1C253AA625CEEEF700ECA752 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C253AA525CEEEF700ECA752 /* ServiceAPI.swift */; };
+		1C253AAA25D043CE00ECA752 /* DatasourceHistoryOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C253AA925D043CE00ECA752 /* DatasourceHistoryOrder.swift */; };
+		1C253AAE25D043E400ECA752 /* DatasourceInfomationOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C253AAD25D043E400ECA752 /* DatasourceInfomationOrder.swift */; };
 		1C299845247C28E4007D5E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C299844247C28E4007D5E72 /* AppDelegate.swift */; };
 		1C299847247C28E4007D5E72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C299846247C28E4007D5E72 /* SceneDelegate.swift */; };
 		1C299849247C28E4007D5E72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C299848247C28E4007D5E72 /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 		1C253A9C25CEDD6F00ECA752 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 		1C253AA125CEE6EA00ECA752 /* InfomationCustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfomationCustomerModel.swift; sourceTree = "<group>"; };
 		1C253AA525CEEEF700ECA752 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
+		1C253AA925D043CE00ECA752 /* DatasourceHistoryOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceHistoryOrder.swift; sourceTree = "<group>"; };
+		1C253AAD25D043E400ECA752 /* DatasourceInfomationOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceInfomationOrder.swift; sourceTree = "<group>"; };
 		1C299841247C28E4007D5E72 /* AdvanceSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvanceSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C299844247C28E4007D5E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C299846247C28E4007D5E72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1C253AA825D043A600ECA752 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				1C253AA925D043CE00ECA752 /* DatasourceHistoryOrder.swift */,
+				1C253AAD25D043E400ECA752 /* DatasourceInfomationOrder.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
 		1C299838247C28E4007D5E72 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,7 @@
 		1C299843247C28E4007D5E72 /* AdvanceSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1C253AA825D043A600ECA752 /* Datasource */,
 				1C253AA025CEE6CA00ECA752 /* Model */,
 				1C253A8725CE58E900ECA752 /* Cell */,
 				1C299844247C28E4007D5E72 /* AppDelegate.swift */,
@@ -180,9 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C299849247C28E4007D5E72 /* ViewController.swift in Sources */,
+				1C253AAA25D043CE00ECA752 /* DatasourceHistoryOrder.swift in Sources */,
 				1C253A8A25CE591700ECA752 /* TableViewCell.swift in Sources */,
 				1C253AA225CEE6EA00ECA752 /* InfomationCustomerModel.swift in Sources */,
 				1C253A9025CE59EC00ECA752 /* Constant.swift in Sources */,
+				1C253AAE25D043E400ECA752 /* DatasourceInfomationOrder.swift in Sources */,
 				1C299845247C28E4007D5E72 /* AppDelegate.swift in Sources */,
 				1C299847247C28E4007D5E72 /* SceneDelegate.swift in Sources */,
 				1C253AA625CEEEF700ECA752 /* ServiceAPI.swift in Sources */,
