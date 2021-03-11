@@ -10,12 +10,12 @@ driving()
 let abc = { (place: String) in
     print("\(place)")
 }
-a("khánh")
+abc("khánh")
 
 let bcd = {(place: String) -> String in
     return "\(place)"
 }
-let bb = b("khánh")
+let bb = bcd("khánh")
 print(bb)
 
 let driVing = {
@@ -46,5 +46,9 @@ let ghj = { (_ elementArray: [Int]) -> String in
     return "\(elementArray)"
 }
 
-let fgk = g(d)
+let fgk = ghj(def)
 print(fgk)
+
+
+
+

@@ -17,6 +17,7 @@ class TableViewCell: UITableViewCell {
 
     @IBOutlet var backgroundViewGreen: UIView!
     @IBOutlet weak var buttonAction: UIButton!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var heightCell: NSLayoutConstraint!
     
     var closureCell: ((_ cell: TableViewCell, _ bool: Bool) -> Void)?
