@@ -11,4 +11,5 @@ import Foundation
 class Constant {
     static let tableViewCell = "TableViewCell"
     static let secondTableViewCell = "SecondTableViewCell"
+    static let collectionViewCell = "CollectionViewCell"
 }
