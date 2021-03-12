@@ -61,8 +61,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             }
         }
         
-
-        
         cell.descriptionLabel.text = element.descriptions
         return cell
     }

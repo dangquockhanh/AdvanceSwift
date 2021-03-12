@@ -37,8 +37,7 @@ class TableViewCell: UITableViewCell {
  
         if sender.isSelected == true {
             self.closureCell?(self, true)
-        } else {
-            self.closureCell?(self,false)
         }
+        self.closureCell?(self,false)
     }
 }
